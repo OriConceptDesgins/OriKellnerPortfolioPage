@@ -1,0 +1,110 @@
+*
+{
+    
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    font-size: 22pt;
+}
+
+:root
+{
+    --primary:  rgb(44, 109, 93);
+    --secondary:  #2c2c2c;
+    --tertiary: silver;
+}
+
+body
+{
+    background-color: silver;
+}
+
+header
+{
+    display: flex;
+    background-color: var(--primary);
+    color: white;
+    position: sticky;
+    top: 0;
+    height: 100px;
+}
+
+/* header>div
+{
+    display: inline-flex;
+    color: white;
+    background-color: var(--primary);
+    height:auto;
+    gap: 1em;
+    padding-left: 1em;
+    align-items: center;
+    text-shadow: darkblue 3px 0px 5px;
+} */
+
+.Logo img
+{
+    display: inline-flex;
+    height: 2.5rem;
+}
+
+main
+{
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    padding: 2rem;
+}
+
+
+.Gallery
+{
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    width: 40rem;
+    height: 40rem;
+    padding: 0.5rem;
+    flex-wrap: wrap;   
+    border-radius: 0.5em;
+}
+
+.Card
+{
+    display: block;
+    background-color: white;
+    width: 10rem;
+    height: 15rem;
+    border-radius: 10px;
+}
+
+
+footer
+{
+
+}
+
+@media(width < 768px)
+{
+    body
+    {
+        background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#050505)) fixed;
+    }
+    .Toggle
+    {
+        display:inline-block;
+    }
+
+    .Items
+    {
+        display: none;
+    }
+
+    .CTA
+    {
+        display: none;
+    }
+}
+
