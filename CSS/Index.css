@@ -28,19 +28,37 @@ header
     position: sticky;
     top: 0;
     height: 100px;
+    width: 100%;
 }
 
-/* header>div
+.Logo
 {
     display: inline-flex;
-    color: white;
-    background-color: var(--primary);
     height:auto;
     gap: 1em;
     padding-left: 1em;
     align-items: center;
     text-shadow: darkblue 3px 0px 5px;
-} */
+}
+
+.Navigation
+{
+    display: flex;
+    background:  linear-gradient(0.45turn, var(--primary) 20%, var(--secondary) 10%);
+    height: auto;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 8;
+    padding-right: 2em;
+}
+
+nav>a
+{
+    padding-left: 3em; 
+    font-size: 18pt;
+    color: white;
+    text-decoration: none;
+}
 
 .Logo img
 {
@@ -51,14 +69,35 @@ header
 main
 {
     display: flex;
+    flex-direction: column;
     height: fit-content;
     justify-content: center;
-    padding: 2rem;
+    align-items: center;
 }
 
+.About
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 300px;
+    background-color: var(--secondary);
+}
+
+.About article
+{
+    display: flex;
+    flex-direction: column;
+    font-size: 16pt;
+    align-items: center;
+    line-height: 2;
+}
 
 .Gallery
 {
+    margin-top: 5em;
     background-color: var(--primary);
     display: flex;
     justify-content: center;
