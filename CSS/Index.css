@@ -11,13 +11,17 @@
 :root
 {
     --primary:  rgb(34, 98, 172);
-    --secondary:  #2c2c2c;
+    --secondary:  rgb(15, 20, 43);
     --tertiary: darkgrey;
 }
 
 body
 {
-    background-color: silver;
+    background-image: url(../images/pexels-kindel-media-8849640.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    backdrop-filter: blur(0.1em);
 }
 
 header
@@ -29,6 +33,7 @@ header
     top: 0;
     height: 100px;
     width: 100%;
+    z-index: 1;
 }
 
 .Logo
@@ -95,11 +100,21 @@ main
     line-height: 2;
 }
 
+.About article>h1
+{
+    display: inline-flex;
+    width: 100em;
+    justify-content: center;
+    background-color: black;
+    border: 0.1em solid var(--primary);
+    margin: 1em;
+}
+
 .Gallery
 {
     margin-top: 5em;
     margin-bottom: 5em;
-    background-color: var(--primary);
+    background-color: rgba(255, 255, 255, 0.26);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,6 +124,9 @@ main
     padding: 2em;
     flex-wrap: wrap;   
     border-radius: 0.5em;
+    box-shadow: 1em 1em 1em  1em rgba(31, 38, 41, 0.185);
+    backdrop-filter: blur(0.5em);
+    z-index: 0;
 }
 
 .Card
@@ -118,6 +136,7 @@ main
     width: 10em;
     height: 15em;
     border-radius: 10px;
+    border: 0.2em solid var(--primary);
 }
 
 
