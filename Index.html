@@ -38,27 +38,37 @@
         </div>
 
         <div class="About">
-            <img src="./images/MeTemp.jpg" alt="Personal Picture">
-            <article>
-                <h2>About me</h2>
-                Living in the lush countryside of rural westren galilee in Israel, Ori's creativity flows into all areas of life as a developer and a designer. 
-                In his spare time he enjoys walks in nature , creating digital art, random carpentry projects and playing Pistol Whip VR.  
-            </article>
+            <div class="AboutGlassContainer">
+                <img src="./images/MeTemp.jpg" alt="Personal Picture">
+                <article>
+                    <h2>About me</h2>
+                    Living in the lush countryside of rural westren galilee in Israel, Ori's creativity flows into all areas of life as a developer and a designer. 
+                    In his spare time he enjoys walks in nature , creating digital art, random carpentry projects and playing Pistol Whip VR.  
+                </article>
+            </div>
         </div>
 
         <div class="Gallery">
-            <div class="Card"></div>
-            <div class="Card"></div>
-            <div class="Card"></div>
-            <div class="Card"></div>
-            <div class="Card"></div>
-            <div class="Card"></div>
+            <div class="CardGlassContainer">
+                <div class="Card"></div>
+                <div class="Card"></div>
+                <div class="Card"></div>
+                <div class="Card"></div>
+                <div class="Card"></div>
+                <div class="Card"></div>
+            </div>
         </div>
     </main>
 
     <footer>
-        <div>
-            
+        <div class="FormContainer">
+            <form action="/action_page.php">
+                <label for="fname">Full name:</label><br>
+                <input type="text" id="fname" name="fname" value="Frank Herbert"><br>
+                <label for="email">Email address:</label><br>
+                <input type="email" id="email" name="email" value="Atredis.Mentat@gmail.com"><br><br>
+                <input type="submit" value="Submit">
+              </form> 
         </div>
     </footer>
 
