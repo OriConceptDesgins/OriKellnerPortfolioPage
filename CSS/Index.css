@@ -117,8 +117,9 @@ main
 {
     display: flex;
     background-image: url(../images/pexels-ian-turnell-709552.png);
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 110%;
     background-color: black;
     backdrop-filter: blur(0.1em);
     width: 100%;
@@ -168,6 +169,7 @@ main
 {
     display: flex;
     background-image: url(../images/pexels-kindel-media-8849640.webp);
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
