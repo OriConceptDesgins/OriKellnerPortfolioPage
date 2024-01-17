@@ -192,6 +192,26 @@ main
     align-items: center;
 }
 
+.Skills
+{
+    background-color: var(--secondary);
+    gap:1%;
+    display: flex;
+    width: 100%;
+    height:auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.Skills img
+{
+    display: flex;
+    z-index: 1;
+    width: 7%;
+    height:auto;
+    padding: 2%;
+}
+
 .Gallery h2 
 {
     display: flex;
@@ -237,12 +257,13 @@ footer /*#region Footer */
 {
     display: flex;
     background-color: var(--secondary);
-    height: 1000px;
+    height: 30%;
     width: auto;
     align-items: center;
     justify-content: center;
     color: white;
     flex-direction: column;
+    padding-top: 5%;
 }
 
 .FormContainer
@@ -324,8 +345,8 @@ footer /*#region Footer */
 .Legal
 {
     display: flex;
-    font-size:16pt;
-    margin-top: 5%;
+    font-size:12pt;
+    margin: 5% 0% 1%;
     position: relative;
     align-self: flex-start;
     left: 3%;
