@@ -161,9 +161,17 @@ main
 
 .About article
 {
+    display:flex;
     flex: 8;
+    flex-direction: column;
+    align-items: flex-start;
 }
-/*#endregion*/
+
+.About article>button
+{
+    width: 20%;
+    margin: 2em 1em;
+}/*#endregion*/
 
 .Gallery /*#region Gallery */
 {
