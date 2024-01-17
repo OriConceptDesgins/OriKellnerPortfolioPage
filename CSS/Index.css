@@ -237,23 +237,38 @@ footer /*#region Footer */
 {
     display: flex;
     background-color: var(--secondary);
-    height: 1500px;
+    height: 1000px;
     width: auto;
     align-items: center;
+    justify-content: center;
     color: white;
     flex-direction: column;
-    border-bottom: 10px solid var(--primary);
 }
 
 .FormContainer
 {
     display: flex;
     width: 60%;
-    margin-top: 1%;
     border-radius: 15px;
-    padding: 1%;
-    flex-wrap: nowrap;
+    border-bottom: 0.1em solid var(--primary);
+    padding: 1em;
+    position: relative;
 }
+
+.FormContainer form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.FormContainer form>h2
+{
+    color: white;
+    width: fit-content;
+    margin-bottom: 1em;
+    border-bottom: 5px solid var(--primary);
+}
+
 
 .FormContainer>form>textarea
 {
@@ -271,6 +286,27 @@ footer /*#region Footer */
     border-radius: 10px;
     border: 0.15em solid var(--primary);
     margin: 1% 1%;
+    font-size:16pt;
+}
+
+.SubmitButton
+{
+    width: auto;
+    margin: 3em 0em;
+    background-color: var(--primary);
+    color: white;
+    padding: 0.5em;
+    border-radius: 10px;
+    width: 50%;
+    align-self: flex-end;
+    border: 0.2em solid var(--secondary);
+    font-size: 20pt;
+}
+
+.SubmitButton:hover
+{
+    background-color: var(--secondary);
+    color: white;
 }
 
 .FooterIcons
@@ -278,14 +314,22 @@ footer /*#region Footer */
     gap:15%;
     display: flex;
     flex-direction: row;
-    width: 2.5%;
-    height: 10%;
-    position: relative;
-    left: 20%;
-    align-self: flex-start;
+    width: 2em;
+    height:auto;
+    position: absolute;
+    right: 10%;
+    align-self: flex-end;
 }
 
-/*#endregion*/
+.Legal
+{
+    display: flex;
+    font-size:16pt;
+    margin-top: 5%;
+    position: relative;
+    align-self: flex-start;
+    left: 3%;
+}/*#endregion*/
 
 @media(width < 768px) /*#region MQ */
 {
