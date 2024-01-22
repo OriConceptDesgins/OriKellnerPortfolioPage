@@ -1,0 +1,177 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html
+{
+    width: 100%;
+    height: 100%;
+}
+
+body
+{
+    display: flex;
+    background-color: #F6F6F6;
+    width: 100%;
+    height: 100%;
+    justify-content:center;
+    align-items:center;
+}
+
+main
+{
+    display: flex;
+    background-color: white;
+    width: 80%;
+    height: 90%;
+    flex-direction: column;
+    align-items:center;
+}
+
+.ImageContainer
+{
+    background-image: url(../../.././images/Forward.png);
+    background-size: contain;
+    height: 80%;
+    width: 100%;
+    background-repeat: no-repeat;
+    z-index: 0;
+    justify-content: center;
+    align-items:center;
+}
+
+article
+{
+    margin-top: 10%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    z-index: 99;
+    height: 100%;
+    font: normal normal normal 20px/26px Assistant;
+}
+
+h2
+{
+    font: normal normal bold 86px/113px Assistant;
+    color:  #D3E10E;
+    margin-bottom:1%;
+}
+
+.FormContainer
+{
+    display: flex;
+    height: 30%;
+    width: 100%;
+}
+
+form
+{
+    justify-content: center;
+    display: grid;
+    grid-template: 15% 20% / 10% 25% 25%;
+    width: 100%;
+    grid-gap: 0% 3%;
+}
+label
+{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    font: normal normal bold 16px/21px Assistant;
+}
+
+input
+{
+    background-color: #F6F6F6;
+    font: normal normal bold 16px/24px Heebo;
+    border: none;
+    border-bottom: 4px solid #D3E10E;
+}
+
+#FullName
+{
+    grid-area: 2/3;
+}
+
+#Email
+{
+    grid-area: 2/2;
+}
+
+#NameLabel
+{
+    grid-area: 1/3
+}
+
+#EmailLabel
+{
+    grid-area: 1/2;
+}
+
+button
+{
+    grid-area: 2/1;
+    font: normal normal bold 22px/30px Assistant;
+    background-color: #D3E10E;
+    border: none;
+}
+
+@media only screen and (max-width: 700px) /*Smartphones*/
+{
+    main 
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .ImageContainer
+    {
+        background-image: url(../../.././images/ForwardSmall.png);
+        height: 50%;
+        background-size: fixed;
+    }
+
+    .ImageContainer article
+    {
+        display: none;
+    }
+
+    .FormContainer
+    {
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+    }
+    
+    form
+    {
+        display: flex;
+        grid-template: unset;
+        flex-direction: column;
+        height: 100%;
+        width: 90%;
+    }
+
+    label
+    {
+        font: normal normal bold 10px/14px Heebo;
+        margin-top: 5%;
+    }
+
+    input
+    {
+        height: 12%;
+    }
+
+    button
+    {
+        padding: 0.5em 0em 0.5em;
+        font: normal normal bold 14px/19px Heebo;
+        margin-top: 5%;
+    }
+}

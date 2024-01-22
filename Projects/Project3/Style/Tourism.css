@@ -289,6 +289,7 @@ button
         color: white;
         justify-content: center;
         position: relative;
+        height: 18%;
     }
 
     .MobileWelcome article
