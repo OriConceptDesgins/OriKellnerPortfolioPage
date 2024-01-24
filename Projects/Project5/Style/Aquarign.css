@@ -16,7 +16,8 @@ html
 main
 {
     display: flex;
-    background-color: rgb(169, 216, 247);
+    background-image: url(../Images/pexels-jeremy-bishop-2397651.jpg);
+    background-size: cover;
     width: 100%;
     height: 100vh;
     position: relative;
@@ -66,6 +67,57 @@ h1
     bottom: -20vh;
     right: -10vw;
     z-index: 0;
+}
+
+.DonateContainer
+{
+    display: flex;
+    background-image: url(../Images/TeamCenote.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 18%;
+    height: 12vh;
+    position: absolute;
+    left: 5%;
+    top: 15vh;
+    box-shadow: 10px 10px 50px rgb(0, 26, 73);
+}
+
+.DonateContainer article
+{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(10, 29, 90, 0.575);
+}
+
+.DonateButtons
+{
+    margin-left:15rem;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 60px);;
+    width: 5rem;
+    height: 15rem;
+    grid-gap: 1rem;
+}
+
+.Donate1
+{
+    background-image: url(../Images/Icons/cc-paypal.svg);
+    background-repeat: no-repeat;
+}
+
+.Donate2
+{
+    background-image: url(../Images/Icons/cc-stripe.svg);
+    background-repeat: no-repeat;
+}
+
+.DonateContainer article>.FrameDecor
+{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+
 }
 
 .ImageContainer
@@ -262,6 +314,7 @@ textarea
     p
     {
         margin-top: 2%;
+        font-size: 1.1rem;
     }
 
     h2
@@ -271,11 +324,322 @@ textarea
 
     h3
     {
+        margin-top: 1rem;
         font-size: 16pt;
+    }
+
+    ul
+    {
+        font-size: 1.1rem;
     }
 
     p
     {
         font-size: 14pt;
     }
+
+    button
+    {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .ImageContainer
+    {
+        margin-top: 2rem;
+    }
+
+    .ContactFormContainer
+    {
+        width: 17rem;
+        left: 75.5%;
+    }
+
+    form
+    {
+        margin-top: 0.1rem;
+    }
+
+    input
+    {
+        font-size: 1rem;
+        margin-top: 0.2rem;
+    }
+
+    #DiveForm button
+    {
+        width: 3rem;
+        height: 1.5rem;
+        font-size: 1rem;
+        margin-left: 9rem;
+        margin-top: 0.5rem;
+    }
+
+    .Socials
+    {
+        margin-top: 8rem;
+        margin-left: 0.5rem;
+        height: 10rem;
+    }
+
+    .DonateButtons
+    {
+        margin-left:5rem;
+        margin-top: 0.5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 50px);;
+        width: 5rem;
+        height: 25rem;
+        grid-gap: 0.5rem;
+    }
+
+    .DonateContainer
+    {
+        height: 7rem;
+    }
+}
+
+@media only screen and (max-width: 1200px)
+{
+
+    p
+    {
+        margin-top: 2%;
+        font-size: 1.1rem;
+    }
+
+    h2
+    {
+        font-size: 20pt;
+    }
+
+    h3
+    {
+        margin-top: 1rem;
+        font-size: 16pt;
+    }
+
+    ul
+    {
+        font-size: 1.1rem;
+    }
+
+    p
+    {
+        font-size: 14pt;
+    }
+
+    button
+    {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .ImageContainer
+    {
+        margin-top: 2rem;
+    }
+
+    .ContactFormContainer
+    {
+        width: 17rem;
+        left: 75.5%;
+    }
+
+    form
+    {
+        margin-top: 0.1rem;
+    }
+
+    input
+    {
+        font-size: 1rem;
+        margin-top: 0.2rem;
+    }
+
+    #DiveForm button
+    {
+        width: 3rem;
+        height: 1.5rem;
+        font-size: 1rem;
+        margin-left: 9rem;
+        margin-top: 0.5rem;
+    }
+
+    .Socials
+    {
+        margin-top: 8rem;
+        margin-left: 0.5rem;
+        height: 10rem;
+    }
+
+    .DonateButtons
+    {
+        margin-left:5rem;
+        margin-top: 0.5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 50px);;
+        width: 5rem;
+        height: 25rem;
+        grid-gap: 0.5rem;
+    }
+
+    .DonateContainer
+    {
+        height: 7rem;
+    }
+}
+
+@media only screen and (max-width: 900px)
+{
+    html
+    {
+        height: 80vh;
+        overflow: unset;
+    }
+
+    main
+    {
+    justify-content: center;
+    height: 200vh;
+    }
+
+    h1
+    {
+        font-size: 24pt;
+        margin-top: 2rem;
+        margin-left: 0rem;
+    }
+
+    .Decoration 
+    {
+        background-color: rgb(18, 42, 107);
+        width: 100%;
+        height: 100vh;
+        border-radius:0%;
+        position: absolute;
+        top: -50vh;
+        left: 0vw;
+        z-index: 0;
+    }
+
+    .Decoration1 
+    {
+        display: none;
+    }
+
+    .Decoration2
+    {
+        display: none;
+    }
+
+    .DonateContainer
+    {
+        display: flex;
+        background-image: url(../Images/TeamCenote.jpeg);
+        width: 100%;
+        height: 22%;
+        left: 0rem;
+        top: 85rem;
+        box-shadow: 10px 10px 50px rgb(0, 26, 73);
+        z-index: 99;
+    }
+
+    .ImageContainer
+    {
+        margin-top: 2rem;
+        width: 100%;
+        height: 45rem;
+        left:0%;
+    }
+
+    p
+    {
+        margin-top: 2%;
+        font-size: 1.1rem;
+    }
+
+    h2
+    {
+        font-size: 20pt;
+    }
+
+    h3
+    {
+        margin-top: 1rem;
+        font-size: 16pt;
+    }
+
+    ul
+    {
+        font-size: 1.1rem;
+    }
+
+    p
+    {
+        font-size: 14pt;
+    }
+
+    button
+    {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
+
+
+
+    .ContactFormContainer
+    {
+        top: 54rem;
+        width: 100%;
+        left:0rem;
+        
+    }
+
+    .ContactFormContainer article
+    {
+        flex-direction: column;
+    }
+
+    form
+    {
+        margin-top: 0.1rem;
+    }
+
+    input
+    {
+        font-size: 1rem;
+        margin-top: 0.2rem;
+    }
+
+    #DiveForm button
+    {
+        width: 3rem;
+        height: 1.5rem;
+        font-size: 1rem;
+        margin-left: 9rem;
+        margin-top: 0.5rem;
+    }
+
+    .Socials
+    {
+        margin-top: 0rem;
+        margin-left: 0rem;
+        height: 10rem;
+        grid-template-columns: repeat(3, 3rem);;
+        width: 100%;
+        height: 5rem;
+        justify-content: center;
+        grid-gap: 1rem;
+    }
+
+    .DonateButtons
+    {
+        margin-left:65%;
+        margin-top: 0.5rem;
+        width: 5rem;
+        height: 25rem;
+        grid-gap: 0.5rem;
+    }
+
 }
