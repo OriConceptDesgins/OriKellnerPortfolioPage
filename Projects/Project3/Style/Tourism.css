@@ -2,29 +2,16 @@
 {
     padding: 0%;
     margin: 0%;
-}
-
-html
-{
-    width: 100%;
-    height: 100%;
-}
-
-body
-{
-    display: flex;
-    background-color: #F9F9F9;
-    justify-content: center;
-    width: 100%;
-    height: 200em;
+    box-sizing: border-box;
+    font-family: 'Assistant', sans-serif;
+    font-family: 'Heebo', sans-serif;
 }
 
 main
-{
-    
+{  
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 250vh;
     align-items: center;
     justify-content: center;
 }
@@ -36,121 +23,124 @@ main
 
 .GridContainer
 {
+
     background-color: #E5EEFF;
     display: grid;
-    grid-template: repeat(auto-fit, auto);
-    grid-gap: 2%;
-    width: 60%;
-    height: 60%;
+    grid-template: 15.41vw 15.41vw 15.41vw 15.41vw 15.41vw 15.41vw / 15.41vw 15.41vw 15.41vw 15.41vw;
+    grid-gap: 0.7% 1%;
+    width: 100%;
+    height: 100%;
     padding: 10%;
+    justify-content: center;
 }
 
 
 .item1
 {
-    background-image: url("../../.././Images/Rectangle515.png");
+    background-image: url("../Images/Rectangle515.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .item2
 {
-    background-image: url("../../.././Images/Rectangle514.png");
+    background-image: url("../Images/Rectangle514.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .item3
 {
-    background-image: url("../../.././Images/Rectangle516.png");
+    background-image: url("../Images/Rectangle516.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .item4
 {
-    background-image: url("../../.././Images/Rectangle506-5.png");
+    background-image: url("../Images/Rectangle506-5.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .item5
 {
-    background-image: url("../../.././Images/Rectangle506-2.png");
+    background-image: url("../Images/Rectangle506-2.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .item6
 {
-    background-image: url("../../.././Images/Rectangle506-3.png");
+    background-image: url("../Images/Rectangle506-3.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .item7
 {
-    background-image: url("../../.././Images/Rectangle506-4.png");
+    background-image: url("../Images/Rectangle506-4.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .item8
 {
-    background-image: url("../../.././Images/Rectangle506-1.png");
+    background-image: url("../Images/Rectangle506-1.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .item9
 {
-    background-image: url("../../.././Images/Rectangle506-8.png");
+    background-image: url("../Images/Rectangle506-8.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .item10
 {
-    background-image: url("../../.././Images/Rectangle506-7.png");
+    background-image: url("../Images/Rectangle506-7.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .item11
 {
-    background-image: url("../../.././Images/Rectangle506-9.png");
+    background-image: url("../Images/Rectangle506-9.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .item12
 {
-    background-image: url("../../.././Images/Rectangle506-6.png");
+    background-image: url("../Images/Rectangle506-6.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .item13
 {
-    background-image: url("../../.././Images/Rectangle513.png");
+    background-image: url("../Images/Rectangle513.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .item14
 {
-    background-image: url("../../.././Images/Rectangle506.png");
+    background-image: url("../Images/Rectangle506.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .Welcome
 { 
+    display: flex;
     grid-area: 1/3/3/5;
     background-color: #020253;
     color: white;
     justify-content: center;
-    position: relative;
+    align-items: center;
 }
 
 .Welcome article
@@ -158,48 +148,45 @@ main
     display: flex;
     direction: rtl;
     flex-direction: column;
-    font: normal normal normal 20px/26px Assistant;
-    width: 70%;
-    position: absolute;
+    font: normal normal normal 1.25rem/1.625rem Assistant;
+    gap: 1.5vh;
     align-items: center;
-    left: 15%;
-    bottom: 30%;
     text-align: center;
+    max-width: 80%;
 }
 
-.Welcome article>h2
+h1
 {
-    font: normal normal bold 61px/80px Assistant;
+    font: normal normal bold 3.8125rem Assistant;
     color: #0EE1DA;
 }
 
 
 .FormContainer
 {
+    display: flex;
     grid-area: 4/1/7/3;
     background-color: #8E097C;
-    position: relative;
+    justify-content: center;
 }
 
 .FormContainer article
 {
+    margin-top: 8vh;
     display: flex;
     direction: rtl;
     flex-direction: column;
-    font: normal normal normal 20px/26px Assistant;
-    width: 70%;
-    position: absolute;
-    align-items: center;
-    left: 15%;
-    bottom: 10%;
+    font: normal normal normal 1.25rem/1.625rem Assistant;
+    width: 80%;
+    gap: 2vh;
     text-align: center;
     color: white;
 }
 
-.FormContainer article>h2
+h2
 {
     color: white;
-    font: normal normal bold 35px/46px Assistant;
+    font: normal normal bold 2.1875rem Assistant;
 }
 
 form
@@ -210,14 +197,13 @@ form
     flex-direction: column;
     color: #0EE1DA;
     width: 100%;
-    margin-top: 15%;
+    margin-top: 0.7vh;
 }
 
 label
 {
-    font: normal normal bold 16px/24px Heebo;
-    margin-top: 5%;
-    
+    font: normal normal bold 1rem Heebo;
+    margin-top: 2em;
 }
 
 input
@@ -225,10 +211,10 @@ input
     background-color: #E5EEFF;
     display: flex;
     width: 100%;
-    height: 50px;
-    font: normal normal bold 16px/24px Heebo;
+    height: 3.5em;
+    font: normal normal bold 1rem Heebo;
     border: none;
-    border-bottom: 0.5em solid #0EE1DA;
+    border-bottom: 0.2rem solid #0EE1DA;
 }
 
 textarea
@@ -236,7 +222,7 @@ textarea
     background-color: #E5EEFF;
     display: flex;
     width: 100%;
-    height: 10em;
+    height: 17em;
     text-decoration: none;
     border:none;
     border-bottom: 0.5em solid #0EE1DA;
@@ -255,26 +241,61 @@ button
     justify-content: center;
 }
 
+@media only screen and (max-width: 1280px) /*Smartphones*/
+{
+    h1
+    {
+        font-size: 3rem;
+    }
+
+    h2
+    {
+        font-size: 2rem;
+    }
+
+    .FormContainer article
+    {
+        font-size: 1rem;
+    }
+
+    .Welcome article
+    {
+        font-size: 1rem;
+    }
+
+    label
+    {
+        margin-top: 1vh;
+    }
+
+    textarea
+    {
+        height: 10vh;
+    }
+
+    input
+    {
+        height: 5vh;
+    }
+}
+
+
 @media only screen and (max-width: 700px) /*Smartphones*/
 {
-    body
-    {
-        height: 150em;
-    }
+
     main
     {
         flex-direction: column;
+        height: 400vh;
     }
 
     .GridContainer
     {
         background-color: #E5EEFF;
-        display: grid;
-        grid-template: repeat(auto-fit, auto);
-        grid-gap: 0.5% 3%;
+        grid-template: repeat(auto-fill,42.9vw)/ repeat(2, 42.9vw);
         width: 100%;
         height:100%;
-        padding: 2% 2%;
+        grid-gap: 2vh 2vw;
     }
 
     .Welcome
@@ -289,7 +310,7 @@ button
         color: white;
         justify-content: center;
         position: relative;
-        height: 18%;
+        height: 60vh;
     }
 
     .MobileWelcome article
@@ -297,43 +318,43 @@ button
         display: flex;
         direction: rtl;
         flex-direction: column;
-        font: normal normal normal 20px/26px Assistant;
-        width: 70%;
+        font: normal normal normal 1.25/1.625 Assistant;
+        width: 100%;
+        max-width: 80%;
         text-align: center;
+        margin-top: 13vh;
     }
 
-    .MobileWelcome article>h2
+    h1
     {
-        font: normal normal bold 61px/80px Assistant;
+        font: normal normal bold 2.25rem Assistant;
         color: #0EE1DA;
+        margin-bottom: 1vh;
     }
 
     .FormContainer
     {
         grid-area: 5/1/8/3;
         background-color: #8E097C;
-        position: relative;
-
+        height: 100%;
     }
 
 
     .FormContainer article
     {
-        font: normal normal normal 15px/19px Assistant;
-        left: 5%;
-        bottom: 15%;
+        font: normal normal normal 0.9375rem/1.1875rem Assistant;
         width: 90%;
     }
 
-    .FormContainer article>h2
+    h2
     {
-        font: normal normal bold 25px/33px Assistant;
+        font: normal normal bold 1.5625rem Assistant;
         margin-bottom: 5%;
     }
 
     label
     {
-        font: normal normal bold 7px/10px Heebo;
+        font: normal normal bold 0.4375rem Heebo;
     }
 
     textarea
@@ -350,6 +371,6 @@ button
 
     button
     {
-        font: normal normal bold 12px/16px Heebo;
+        font: normal normal bold 0.75rem Heebo;
     }
 }
