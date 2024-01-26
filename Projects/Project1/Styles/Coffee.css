@@ -1,62 +1,48 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
 html
 {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
-
-
-
-body
-{
-    
-    display: flex;
-    background-color:#00000029;
-    justify-content: center;
-    align-items: center;
-    margin: 0%;
-    width: 100%;
-    height: 100%;
-}
-
 main
 {
     background-color:white;
-    border: 1px solid #707070;
-    align-items: center;
     justify-content: center;
     display: flex;
-    height: 70%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     flex-direction: row;
-    z-index: 0;
 }
 
-
-.Container
-{
-    width: 70%;
-    height: 100%;
-    display: flex;
-    margin-top: 20%;
-    align-items: center;
-    flex-direction: column;
-}
 
 .Image
 {   
-    background-image:url("../../.././Images/Coffee.png");
+    background-image:url("../Images/Coffee.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
-    height: 100%;
-    z-index: 99;
+    height: 100vh;
 }
 
+.ContentContainer
+{
+    width: 70vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 25vh;
+}
 
 article
 {
-    font: normal normal normal 20px/29px Heebo;
-    width:60%;
+    font: normal normal normal 1.25rem/1.8125rem Heebo;
+    width:22vw;
     direction: rtl;
     display: flex;
     flex-direction: column;
@@ -69,22 +55,23 @@ form
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    width: 100%;
 }
 
-h2
+h1
 {
     text-align: right;
-    font: normal normal 900 43px/63px Heebo;
-    letter-spacing: 0px;
+    font: normal normal 900 2.6875rem Heebo;
     color: #020253;
     opacity: 1;
+    margin-bottom: 0.6em
 }
 
 
 label
 {
-    font: normal normal bold 16px/24px Heebo;
-    margin-top: 5%;
+    font: normal normal bold 1rem/1.5rem Heebo;
+    margin-top: 5vh;
 }
 
 
@@ -92,16 +79,16 @@ input
 {
     display: flex;
     width: 100%;
-    height: 32px;
+    height: 5vh;
     background: #E5EEFF 0% 0% no-repeat padding-box;
-    font: normal normal bold 16px/24px Heebo;
+    font: normal normal bold 1rem/1.5rem Heebo;
     border: none;
     border-bottom: 3px solid #020253;
 }
 
 button
 {
-    font: normal normal bold 22px/30px Heebo;
+    font: normal normal bold 1.375rem Heebo;
     margin-top: 8%;
     background: #020253;
     color: white;
@@ -131,46 +118,47 @@ button
     main
     {
         flex-direction: column;
-        height: 100%;
-        width: 100%;
-        justify-content: flex-start;
+        height: 100vh;
+        width: 100vw;
+        justify-content: unset;
     }
-    .Container
+    .ContentContainer
     {
-        justify-content: flex-start;
-        margin-top: 0%;
-        width: 95%;
-        height: 100%;
+        margin-top: 1vh;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60vh;
     }
 
     .Image
     {
-        background-image:url("../../.././Images/Coffeesmall.png");
-        height: 66%;
+        background-image:url("../Images/Coffeesmall.png");
+        height: 35vh;
         width: 100%;
     }
 
-    h2
+    h1
     {
-        font: normal normal 900 28px/41px Heebo;
+        font: normal normal 900 1.75rem/2.5625rem Heebo;
     }
 
     article
     {
         justify-content: unset;
-        font: normal normal normal 15px/22px Heebo;
+        font: normal normal normal 0.9375rem/1.375rem Heebo;
         width: 80%;
     }
 
     label
     {
-        font: normal normal bold 10px/14px Heebo;
+        font: normal normal bold 0.625rem Heebo;
     }
 
     button
     {
         width: 100%;
-        height: 20%;
-        font: normal normal bold 10px/14px Heebo;
+        height: 3em;
+        font: normal normal bold 0.875rem Heebo;
     }
 }
