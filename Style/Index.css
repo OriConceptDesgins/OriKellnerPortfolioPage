@@ -5,7 +5,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: Helvetica;
-    font-size: 22pt;
+    font-size: 1rem;
 }
 
 :root
@@ -15,10 +15,19 @@
     --tertiary: #232e35;
 }
 
+html
+{
+
+    height: 100vh;
+    width: 100vw;
+}
+
+
 body
 {
     background-color: black;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
 }/*#endregion*/
 
 header /*#region Header*/
@@ -35,44 +44,51 @@ header /*#region Header*/
 
 .Logo
 {
-    display: inline-flex;
+    display: flex;
     height:auto;
-    gap: 1em;
+    width: 20%;
     padding-left: 5%;
     align-items: center;
     text-shadow: darkblue 3px 0px 5px;
 }
 
+.Logo img
+{
+    display:flex;
+    height: 90%;
+}
+
+.Logo h2
+{
+    font-size:	2rem;
+}
+
 .Navigation
 {
-    display: inline-flex;
+    display: flex;
     background:  linear-gradient(0.45turn, var(--primary) 20%, var(--secondary) 10%);
     height: auto;
     width: 100%;
     align-items: center;
     justify-content: flex-end;
     flex-grow: 8;
-    padding-right: 10%;
+    padding-right: 5%;
 }
 
 nav>a
 {
     padding-left: 3em; 
-    font-size: 18pt;
+    font-size: 1.5rem;
     color: white;
     text-decoration: none;
 }
 
-.Logo img
-{
-    display: inline-flex;
-    height: 2.5rem;
-}/*#endregion*/
+/*#endregion*/
 
 main
 {
     display: flex;
-    width: 100%;
+    width: 100vw;
     flex-direction: column;
     height: fit-content;
     justify-content: center;
@@ -86,7 +102,7 @@ main
     align-items: center;
     color: white;
     width: 100%;
-    height: 300px;
+    height: 40vh;
     padding: auto;
     background-color: var(--secondary);
     margin-bottom: 0.5%;
@@ -97,7 +113,7 @@ main
     display: flex;
     width: 100%;
     flex-direction: column;
-    font-size: 16pt;
+    font-size: 1.5rem;
     align-items: center;
     line-height: 2;
 }
@@ -110,7 +126,8 @@ main
     background-color: rgba(0, 0, 0, 0.342);
     padding: 2% 1% 0%;
     border-bottom: 0.1em solid var(--primary);
-    margin: 1em;
+    margin-bottom: 1em;
+    font-size: 1.5rem;
 }/*#endregion*/
 
 .About /*#region About */
@@ -119,10 +136,11 @@ main
     background-image: url(../images/pexels-ian-turnell-709552.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 100% 110%;
+    background-size: 100% 100%;
     background-color: black;
     backdrop-filter: blur(0.1em);
-    width: 100%;
+    width: 100vw;
+    height: 50vh;
     justify-content: center;
 }
 
@@ -153,6 +171,7 @@ main
 
 .About h2
 {
+    font-size: 	2rem;
     color: white;
     margin-bottom: 1em;
     border-bottom: 5px solid var(--primary);
@@ -160,6 +179,7 @@ main
 
 .About article
 {
+    font-size: 1.4rem;
     display:flex;
     flex: 8;
     flex-direction: column;
@@ -168,12 +188,13 @@ main
 
 .About article>button
 {
+    font-size: 	1.4rem;
     width: auto;
     margin: 3em 0em;
     background-color: var(--primary);
     color: white;
     padding: 0.5em;
-    border-radius: 10px;
+    border-radius: 0.5em;
     border: 0.2em solid var(--secondary);
 }/*#endregion*/
 
@@ -221,7 +242,7 @@ main
     height: 100px;
     justify-content: center;
     padding-top: 1.5em;
-    border-bottom: 5px solid var(--primary);
+    border-bottom: 1em solid var(--primary);
 }
 
 .CardGlassContainer
@@ -275,7 +296,7 @@ main
 {
     width: 90%;
     color: white;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 1em;
     border-bottom: 0.2em solid var(--primary);
 }
@@ -285,8 +306,8 @@ main
     height: 10vh;
     max-width: 90%;
     color: var(--primary);
-    font-size: 0.7rem;
-    margin-bottom: 1em;
+    font-size: 1.2rem;
+    margin-bottom: 2em;
 }
 
 .Card article>button
@@ -298,7 +319,7 @@ main
     border-radius: 0.5em;
     width: 80%;
     border: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 1em;
 }
 
@@ -313,6 +334,7 @@ main
 
 .CardImage1
 {
+    border-radius: 0.7em 0.7em 0em 0em;
     width: 100%;
     height: 35%;
     background-image:linear-gradient(to bottom, transparent, var(--secondary)), url("/Images/Project1Thumbnail.jpg");
@@ -321,6 +343,7 @@ main
 
 .CardImage2
 {
+    border-radius:  0.7em 0.7em 0em 0em;
     width: 100%;
     height: 35%;
     background-image:linear-gradient(to bottom, transparent, var(--secondary)), url("/Images/Project2Thumbnail.jpg");
@@ -329,6 +352,7 @@ main
 
 .CardImage3
 {
+    border-radius:  0.7em 0.7em 0em 0em;
     width: 100%;
     height: 35%;
     background-image:linear-gradient(to bottom, transparent, var(--secondary)), url("/Images/Project3Thumbnail.jpg");
@@ -337,6 +361,7 @@ main
 
 .CardImage4
 {
+    border-radius:  0.7em 0.7em 0em 0em;
     width: 100%;
     height: 35%;
     background-image:linear-gradient(to bottom, transparent, var(--secondary)), url("/Images/Project4Thumbnail.jpg");
@@ -345,6 +370,7 @@ main
 
 .CardImage5
 {
+    border-radius: 0.7em 0.7em 0em 0em;
     width: 100%;
     height: 35%;
     background-image:linear-gradient(to bottom, transparent, var(--secondary)), url("/Images/Project5Thumbnail.jpg");
@@ -353,6 +379,7 @@ main
 
 .CardImage6
 {
+    border-radius: 0.7em 0.7em 0em 0em;
     width: 100%;
     height: 35%;
     background-image:linear-gradient(to bottom, transparent, var(--secondary)), url("/Images/Project6Thumbnail.jpg");
@@ -364,8 +391,8 @@ footer /*#region Footer */
 {
     display: flex;
     background-color: var(--secondary);
-    height: 30%;
-    width: auto;
+    height: 80vh;
+    width: 100vw;
     align-items: center;
     justify-content: center;
     color: white;
@@ -377,7 +404,7 @@ footer /*#region Footer */
 {
     display: flex;
     width: 60%;
-    border-radius: 15px;
+    border-radius: 1em;
     border-bottom: 0.1em solid var(--primary);
     padding: 1em;
     position: relative;
@@ -385,12 +412,14 @@ footer /*#region Footer */
 
 .FormContainer form
 {
+    width: 50%;
     display: flex;
     flex-direction: column;
 }
 
 .FormContainer form>h2
 {
+    font-size: 2rem;
     color: white;
     width: fit-content;
     margin-bottom: 1em;
@@ -442,7 +471,7 @@ footer /*#region Footer */
     gap:15%;
     display: flex;
     flex-direction: row;
-    width: 2em;
+    width: 3rem;
     height:auto;
     position: absolute;
     right: 10%;
@@ -451,33 +480,321 @@ footer /*#region Footer */
 
 .Legal
 {
+    height: 40vh;
+    width: 100vw;
     display: flex;
-    font-size:12pt;
-    margin: 5% 0% 1%;
-    position: relative;
+    font-size: 1rem;
+    padding-left: 5%;
+    flex-direction: column;
+    justify-content: center;
     align-self: flex-start;
-    left: 3%;
 }/*#endregion*/
 
-@media(width < 768px) /*#region MQ */
+@media only screen and (max-width: 700px) /*Smartphones*/
 {
-    body
+    header
     {
-        background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#050505)) fixed;
-    }
-    .Toggle
-    {
-        display:inline-block;
-    }
-
-    .Items
-    {
-        display: none;
+        flex-direction: column;
+        position:unset;
+        height: fit-content;
+        width: 100vw;
     }
 
-    .CTA
+    .Logo
     {
-        display: none;
+        width: 30%;
+        margin-top: 5%;
+    }
+
+    .Logo h2
+    {
+        font-size: 1.5rem;
+    }
+
+    .Navigation
+    {
+        width: 100%;
+        justify-content: center;
+        flex-grow: unset;
+        padding-right: unset;
+        margin-top: 5vh;
+        padding: 0em 0em 1em;
+    }
+
+    nav
+    {
+        display: flex;
+        gap: 1px;
+        padding-top: 2em;
+    }
+
+    nav>a
+    {
+        padding-left: 0.5em; 
+        font-size: 1.4rem;
+    }
+
+    .Welcome /*#region Welcome*/
+    {
+        height: 50vh;
+        margin-bottom: 0.5%;
+    }
+
+    .Welcome>article
+    {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 2;
+    }
+
+    .Welcome article>h1
+    {
+        text-align: center;
+        padding: 0.5em 0em 0.5em;
+        margin-bottom: 1em;
+        font-size: 1.5rem;
+    }/*#endregion*/
+
+    
+    .About /*#region About */
+    {
+        width: 100vw;
+        height: auto;
+    }
+
+    .AboutGlassContainer{
+        flex-direction: column;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        gap: 0.5rem;
+        width: 95%;
+        height: auto;
+        padding: 2em;
+        border-radius: 0.5em;
+    }
+
+    .AboutGlassContainer>img
+    {
+        border-radius: 1em;
+        border: 0.2em solid var(--primary);
+        
+    }
+
+    .About h2
+    {
+        text-align: center;
+        width: 100%;
+        font-size: 	1.5rem;
+        margin-bottom: 0.5em;
+        border-bottom: 0.2em solid var(--primary);
+    }
+
+    .About article
+    {
+        font-size: 1.1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .About article>button
+    {
+        font-size: 	1.1rem;
+        width: auto;
+        margin: 3em 0em;
+        background-color: var(--primary);
+        color: white;
+        padding: 0.5em;
+        border-radius: 0.5em;
+        border: 0.2em solid var(--secondary);
+    }/*#endregion*/
+
+    main
+    {
+        width: 100vw;
+        flex-direction: column;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Skills
+    {
+        gap:20%;
+        width: 100%;
+        height:15vh;
+    }
+
+    .Skills img
+    {
+        width: 15vw;
+    }
+
+    .Gallery h2 
+    {
+        font-size: 1.5rem;
+        margin-bottom: 2%;
+    }
+
+
+        
+    .CardGlassContainer
+    {
+        margin-top: 5em;
+        margin-bottom: 5em;
+        background-color: rgba(255, 255, 255, 0.26);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+        width: 95%;
+        height: auto;
+        padding: 5% 2%;
+        flex-wrap: wrap;   
+        border-radius: 0.5em;
+        box-shadow: 1em 1em 1em  1em rgba(31, 38, 41, 0.185);
+        backdrop-filter: blur(0.5em);
+        z-index: 0;
+    }
+
+    .Card
+    {
+        width: 70vw;
+        height: 60vh;
+        border-radius: 1em;
+        border: 0.2em solid var(--secondary);
+        box-shadow: 0.5em 1em 1em 0.3em rgba(9, 40, 48, 0.719);
+        opacity: 0.8;
+    }
+
+    .Card:hover
+    {
+        opacity: 1;
+    }
+
+    .Card article
+    {
+        display: flex;
+        flex-direction: column;
+        text-align:center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Card article>h3
+    {
+        width: 90%;
+        color: white;
+        font-size: 1.5rem;
+        margin-bottom: 1em;
+        border-bottom: 0.2em solid var(--primary);
+    }
+
+    .Card article>p
+    {
+        height: 10vh;
+        max-width: 90%;
+        color: var(--primary);
+        font-size: 1.2rem;
+        margin-bottom: 2em;
+    }
+
+    .Card article>button
+    {
+        width: auto;
+        background-color: var(--primary);
+        color: white;
+        padding: 0.3em;
+        border-radius: 0.5em;
+        width: 80%;
+        border: none;
+        font-size: 1.5rem;
+        margin-bottom: 1em;
+    }
+
+
+    footer 
+    {
+        width: 100vw;
+        height: 110vh;
+        flex-direction: column;
+    }
+
+    .FormContainer
+    {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        height: 200vh;
+        border-radius: 1em;
+        border-bottom: 0.1em solid var(--primary);
+        padding: 1em;
+        position: unset;
+    }
+
+    .FormContainer form
+    {
+        align-items: center;
+        width: 100%;
+    }
+
+    .FormContainer form>h2
+    {
+        font-size: 1.4rem;
+    }
+
+    .FormContainer>form>input
+    {
+        width: 100%;
+        padding: 0.5em;
+        border-radius: 0.5em;
+        margin: 1% 0%;
+        font-size:1rem;
+    }
+
+    .FormContainer>form>textarea
+    {
+        border-radius: 0.5em;
+        margin: 1% 0%;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+
+    .SubmitButton
+    {
+        margin: 5em;
+        padding: 0.5em;
+        border-radius: 10px;
+        width: 100%;
+        align-self: unset;
+        font-size: 1.4rem;
+    }
+
+    .FooterIcons
+    {
+        margin-top: 5em;
+        gap:2vw;
+        display: flex;
+        flex-direction: row;
+        width: 15vw;
+        height:auto;
+        justify-content: center;
+        align-self: center;
+        position: unset;
+    }
+
+    .Legal
+    {
+        max-width: 80vw;
+        display: flex;
+        font-size: 0.8rem;
+        align-self: flex-start;
+        margin-left: 3vw;
+        left: unset;
+        position: unset;
     }
 } /*#endregion*/
 
