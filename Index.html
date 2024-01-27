@@ -24,7 +24,7 @@
     </header> 
 
     <main>
-        <div class="Welcome">
+        <div class="Welcome" id="Home">
             <article>
                 <h1>Welcome to Ori Kellner's Portfolio</h1>
                 I'm a web developer specialzing in design operations and imaging
@@ -32,37 +32,79 @@
             </article>       
         </div>
 
-        <div class="About">
+        <div class="About" id="About">
             <div class="AboutGlassContainer">
                 <img src="./images/IMG_20190923_112639485.jpg" alt="Personal Picture">
                 <article>
                     <h2>About me</h2>
                     Living in the lush countryside of rural westren galilee in Israel, Ori's creativity flows into all areas of life as a developer and a designer. 
                     In his spare time he enjoys walks in nature , creating digital art, random carpentry projects and playing Pistol Whip VR.  
-                    <button>Download CV</button>
+                    <button type="submit" onclick="window.open('/Scripts/קורות חיים אורי קלנר.pdf')">Download CV</button>
                 </article>
             </div>
         </div>
 
-        <div class="Gallery">
+        <div class="Gallery" id="Gallery">
             <h2>Projects Gallery</h2>
             <div class="Skills">
                 <img src="./images/Icons/html5.svg" alt="Discord Icon">
                 <img src="./images/Icons/css3.svg" alt="Instagram Icon">
             </div>
             <div class="CardGlassContainer">
-                <div class="Card"></div>
-                <div class="Card"></div>
-                <div class="Card"></div>
-                <div class="Card"></div>
-                <div class="Card"></div>
-                <div class="Card"></div>
+                <div class="Card">
+                    <div class="CardImage1"></div>
+                    <article>
+                        <h3>Coffee Project</h3>
+                        <p>A Landing page for a coffee shop</p>
+                        <button onclick="document.location.href='/Projects/IntroPages/Html/Project1Intro.html'">To Project Page</button>
+                    </article>
+                </div>
+                <div class="Card">
+                    <div class="CardImage2"></div>
+                    <article>
+                        <h3>College Invite Project</h3>
+                        <p>A Landing page for a College Invite</p>
+                        <button onclick="document.location.href='/Projects/IntroPages/Html/Project2Intro.html'">To Project Page</button>
+                    </article>
+                </div>
+                <div class="Card">
+                    <div class="CardImage3"></div>
+                    <article>
+                        <h3>VR Tourism App</h3>
+                        <p>A Landing page for a VR Tourism app advertisement</p>
+                        <button onclick="document.location.href='/Projects/IntroPages/Html/Project3Intro.html'">To Project Page</button>
+                    </article>
+                </div>
+                <div class="Card">
+                    <div class="CardImage4"></div>
+                    <article>
+                        <h3>College Invite Project</h3>
+                        <p>A Landing page for a College Invite</p>
+                        <button onclick="document.location.href='/Projects/IntroPages/Html/Project4Intro.html'">To Project Page</button>
+                    </article>
+                </div>
+                <div class="Card">
+                    <div class="CardImage5"></div>
+                    <article>
+                        <h3>Underwater diving volunteer Project</h3>
+                        <p>This is a page and design for a Diving environmentalist activism project Landing page.</p>
+                        <button onclick="document.location.href='/Projects/IntroPages/Html/Project5Intro.html'">To Project Page</button>
+                    </article>
+                </div>
+                <div class="Card">
+                    <div class="CardImage6"></div>
+                    <article>
+                        <h3>Here and Now Event Project</h3>
+                        <p>A Landing page for a Festive event called Here and Now</p>
+                        <button onclick="document.location.href='/Projects/IntroPages/Html/Project6Intro.html'">To Project Page</button>
+                    </article>
+                </div>
             </div>
         </div>
     </main>
 
     <footer>
-        <div class="FormContainer">
+        <div class="FormContainer" id="Contact">
             <form action="/action_page.php">
                 <h2>Contact me</h2>
                 <input type="text" id="fname" name="fname" placeholder="Full Name">
