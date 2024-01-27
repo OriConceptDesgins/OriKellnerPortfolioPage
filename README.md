@@ -1,4 +1,10 @@
-This is the portfolio page of Ori Kellner. 
-HTML+CSS for now, more to come later
-Images from Pexels.com , free to use and the rest are images provided.
+Ori Kellner's Portfolio Project 
+	Html and CSS
+	Used free Images from Pexels.com and images that were provided as per requirement of the client.
+	Software used: 
+		VsCode
+		Affinity Photo
+		Affinity Designer
+		Ms Paint
 
+Project URL :  https://github.com/OriConceptDesgins/OriKellnerPortfolioPage
